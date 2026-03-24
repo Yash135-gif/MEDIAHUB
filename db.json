@@ -1,0 +1,800 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "War Machine",
+      "genre": "Action",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie1.mp4",
+      "year": "2026",
+      "duration": "125 min",
+      "rating": "8.2",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/tlPgDzwIE7VYYIIAGCTUOnN4wI1.jpg",
+      "description": "An elite military unit faces a terrifying mechanical threat during a classified mission that quickly turns into a desperate fight for survival."
+    },
+    {
+      "id": "2",
+      "title": "Shelter",
+      "genre": "Thriller",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie1.mp4",
+      "year": "2026",
+      "duration": "112 min",
+      "rating": "7.9",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg",
+      "description": "A family hiding in an underground bunker discovers that the real danger may already be inside with them."
+    },
+    {
+      "id": "3",
+      "title": "The Bluff",
+      "genre": "Adventure",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie4.mp4",
+      "year": "2026",
+      "duration": "118 min",
+      "rating": "7.8",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/w0jwjFmRu2or7LQqh1tSMFjq0At.jpg",
+      "description": "A former pirate must defend her island and family when dangerous enemies return to claim hidden treasure."
+    },
+    {
+      "id": "4",
+      "title": "Zootopia 2",
+      "genre": "Animation",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie7.mp4",
+      "year": "2025",
+      "duration": "105 min",
+      "rating": "9.0",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+      "description": "Judy Hopps and Nick Wilde return to solve a mysterious case involving a new reptile species shaking the peace of Zootopia."
+    },
+    {
+      "id": "5",
+      "title": "Whistle",
+      "genre": "Horror",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie2.mp4",
+      "year": "2026",
+      "duration": "101 min",
+      "rating": "7.4",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/84vAcFwxoObBuMWANWQXCg0Umg8.jpg",
+      "description": "A cursed whistle discovered by teenagers begins summoning a terrifying presence whenever it is blown."
+    },
+    {
+      "id": "6",
+      "title": "Hoppers",
+      "genre": "Animation",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie3.mp4",
+      "year": "2026",
+      "duration": "98 min",
+      "rating": "7.6",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
+      "description": "A young scientist discovers technology that allows humans to transfer their minds into animal robots."
+    },
+    {
+      "id": "7",
+      "title": "Greenland 2: Migration",
+      "genre": "Action",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie2.mp4",
+      "year": "2026",
+      "duration": "119 min",
+      "rating": "8.1",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/z2tqCJLsw6uEJ8nJV8BsQXGa3dr.jpg",
+      "description": "After surviving a global catastrophe, a family must migrate across a dangerous and frozen wasteland to reach a safe colony."
+    },
+    {
+      "id": "8",
+      "title": "Mercy",
+      "genre": "Sci-Fi",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie6.mp4",
+      "year": "2026",
+      "duration": "110 min",
+      "rating": "7.7",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/pyok1kZJCfyuFapYXzHcy7BLlQa.jpg",
+      "description": "In a future ruled by AI justice systems, a detective discovers a conspiracy that could destroy humanity's trust in technology."
+    },
+    {
+      "id": "9",
+      "title": "Hellfire",
+      "genre": "Action",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie3.mp4",
+      "year": "2026",
+      "duration": "114 min",
+      "rating": "7.5",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/tQti9QTf13MfzNpXguijgNh7ojE.jpg",
+      "description": "A secret military experiment unleashes a destructive force that threatens to consume an entire city."
+    },
+    {
+      "id": "10",
+      "title": "Your Heart Will Be Broken",
+      "genre": "Drama",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie1.mp4",
+      "year": "2026",
+      "duration": "108 min",
+      "rating": "8.0",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/iGpMm603GUKH2SiXB2S5m4sZ17t.jpg",
+      "description": "A powerful emotional story about love, betrayal, and the fragile nature of human relationships."
+    },
+    {
+      "id": "11",
+      "title": "Predator: Badlands",
+      "genre": "Action",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie2.mp4",
+      "year": "2025",
+      "duration": "118 min",
+      "rating": "8.3",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/erTRAi241eYF4K8KoGGOI8kFPox.jpg",
+      "description": "A new deadly Predator hunts in the harsh Badlands as a group of soldiers must survive the ultimate extraterrestrial hunter."
+    },
+    {
+      "id": "12",
+      "title": "Hunting Season",
+      "genre": "Thriller",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie3.mp4",
+      "year": "2025",
+      "duration": "110 min",
+      "rating": "7.7",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/cbryTyaWdqrKpQCw6K7zm2jrB5v.jpg",
+      "description": "A group of strangers find themselves trapped in a deadly forest where they become the prey in a brutal hunting game."
+    },
+    {
+      "id": "13",
+      "title": "The Internship",
+      "genre": "Comedy",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie6.mp4",
+      "year": "2026",
+      "duration": "105 min",
+      "rating": "7.5",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/fYqSOkix4rbDiZW0ACNnvZCpT6X.jpg",
+      "description": "Two friends in their thirties join a tech company internship program where they must compete with younger digital natives."
+    },
+    {
+      "id": "14",
+      "title": "The Rip",
+      "genre": "Crime",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie5.mp4",
+      "year": "2026",
+      "duration": "112 min",
+      "rating": "7.9",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/eZo31Dhl5BQ6GfbMNf3oU0tUvPZ.jpg",
+      "description": "A team of Miami cops discovers millions in a hidden stash house, but greed and betrayal quickly destroy their loyalty."
+    },
+    {
+      "id": "15",
+      "title": "State of Fear",
+      "genre": "Political Thriller",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie4.mp4",
+      "year": "2026",
+      "duration": "120 min",
+      "rating": "8.0",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/3Eaqedg8MAlnP51GYY8MCSIdTnV.jpg",
+      "description": "A journalist uncovers a government conspiracy that could plunge the nation into chaos."
+    },
+    {
+      "id": "16",
+      "title": "xXx",
+      "genre": "Action",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie1.mp4",
+      "year": "2002",
+      "duration": "124 min",
+      "rating": "7.2",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/xeEw3eLeSFmJgXZzmF2Efww0q3s.jpg",
+      "description": "Extreme sports athlete Xander Cage is recruited by the government to infiltrate a dangerous criminal organization."
+    },
+    {
+      "id": "17",
+      "title": "Wildcat",
+      "genre": "Drama",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie4.mp4",
+      "year": "2025",
+      "duration": "108 min",
+      "rating": "7.6",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/h893ImjM6Fsv5DFhKJdlZFZIJno.jpg",
+      "description": "A troubled soldier finds healing and purpose while working with a wildlife rescue organization in the Amazon."
+    },
+    {
+      "id": "18",
+      "title": "One Battle After Another",
+      "genre": "Drama",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie5.mp4",
+      "year": "2025",
+      "duration": "134 min",
+      "rating": "8.1",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+      "description": "A war veteran struggles to rebuild his life while facing the memories of battles that refuse to fade."
+    },
+    {
+      "id": "19",
+      "title": "JUJUTSU KAISEN: Execution",
+      "genre": "Anime",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie7.mp4",
+      "year": "2025",
+      "duration": "110 min",
+      "rating": "8.8",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/v0s3dx6am0RzfsuK3KdEy8ZoCDs.jpg",
+      "description": "Yuji Itadori faces the consequences of a dangerous curse while powerful sorcerers prepare for a deadly execution order."
+    },
+    {
+      "id": "20",
+      "title": "Oscar Shaw",
+      "genre": "Drama",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie6.mp4",
+      "year": "2026",
+      "duration": "107 min",
+      "rating": "7.8",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/tsE3nySukwrfUjouz8vzvKTcXNC.jpg",
+      "description": "A struggling musician named Oscar Shaw gets a once-in-a-lifetime chance that could change his life forever."
+    }
+  ],
+  "watchlist": [
+    {
+      "id": "1",
+      "title": "War Machine",
+      "genre": "Action",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie1.mp4",
+      "year": "2026",
+      "duration": "125 min",
+      "rating": "8.2",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/tlPgDzwIE7VYYIIAGCTUOnN4wI1.jpg",
+      "description": "An elite military unit faces a terrifying mechanical threat during a classified mission that quickly turns into a desperate fight for survival."
+    },
+    {
+      "id": "tv10",
+      "title": "Stargate SG-1",
+      "genre": "Sci-Fi",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie1.mp4",
+      "year": "1997",
+      "seasons": "10 Seasons",
+      "rating": "8.4",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/dQjmI7XxI47v8IM2MUysHG0LuU2.jpg",
+      "description": "A secret military team travels through a stargate to explore other planets and fight alien threats."
+    }
+  ],
+  "continueWatching": [
+    {
+      "id": "1",
+      "title": "War Machine",
+      "genre": "Action",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie1.mp4",
+      "year": "2026",
+      "duration": "125 min",
+      "rating": "8.2",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/tlPgDzwIE7VYYIIAGCTUOnN4wI1.jpg",
+      "description": "An elite military unit faces a terrifying mechanical threat during a classified mission that quickly turns into a desperate fight for survival.",
+      "progress": 10
+    },
+    {
+      "id": "2",
+      "title": "Shelter",
+      "genre": "Thriller",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie1.mp4",
+      "year": "2026",
+      "duration": "112 min",
+      "rating": "7.9",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg",
+      "description": "A family hiding in an underground bunker discovers that the real danger may already be inside with them.",
+      "progress": 10
+    },
+    {
+      "id": "3",
+      "title": "The Bluff",
+      "genre": "Adventure",
+      "videoUrl": "/trailers/movie2.mp4",
+      "year": "2026",
+      "duration": "118 min",
+      "rating": "7.8",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/w0jwjFmRu2or7LQqh1tSMFjq0At.jpg",
+      "description": "A former pirate must defend her island and family when dangerous enemies return to claim hidden treasure.",
+      "progress": 10
+    },
+    {
+      "id": "4",
+      "title": "Zootopia 2",
+      "genre": "Animation",
+      "videoUrl": "/trailers/movie2.mp4",
+      "year": "2025",
+      "duration": "105 min",
+      "rating": "9.0",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+      "description": "Judy Hopps and Nick Wilde return to solve a mysterious case involving a new reptile species shaking the peace of Zootopia.",
+      "progress": 10
+    },
+    {
+      "id": "20",
+      "title": "Oscar Shaw",
+      "genre": "Drama",
+      "videoUrl": "/trailers/movie2.mp4",
+      "year": "2026",
+      "duration": "107 min",
+      "rating": "7.8",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/tsE3nySukwrfUjouz8vzvKTcXNC.jpg",
+      "description": "A struggling musician named Oscar Shaw gets a once-in-a-lifetime chance that could change his life forever.",
+      "progress": 10
+    },
+    {
+      "id": "7",
+      "title": "Greenland 2: Migration",
+      "genre": "Action",
+      "videoUrl": "/trailers/movie2.mp4",
+      "year": "2026",
+      "duration": "119 min",
+      "rating": "8.1",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/z2tqCJLsw6uEJ8nJV8BsQXGa3dr.jpg",
+      "description": "After surviving a global catastrophe, a family must migrate across a dangerous and frozen wasteland to reach a safe colony.",
+      "progress": 10
+    },
+    {
+      "id": "11",
+      "title": "Predator: Badlands",
+      "genre": "Action",
+      "videoUrl": "/trailers/movie2.mp4",
+      "year": "2025",
+      "duration": "118 min",
+      "rating": "8.3",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/erTRAi241eYF4K8KoGGOI8kFPox.jpg",
+      "description": "A new deadly Predator hunts in the harsh Badlands as a group of soldiers must survive the ultimate extraterrestrial hunter.",
+      "progress": 10
+    },
+    {
+      "id": "tv1",
+      "title": "ONE PIECE",
+      "genre": "Adventure",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie1.mp4",
+      "year": "2023",
+      "seasons": "1 Season",
+      "rating": "8.5",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/blWCPEqDGLBuLB9u89CxP9ORQP4.jpg",
+      "description": "A young pirate named Luffy and his crew set sail to find the legendary treasure known as One Piece.",
+      "progress": 10
+    },
+    {
+      "id": "tv2",
+      "title": "NCIS",
+      "genre": "Crime",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie3.mp4",
+      "year": "2003",
+      "seasons": "20+ Seasons",
+      "rating": "7.8",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/mBcu8d6x6zB1el3MPNl7cZQEQ31.jpg",
+      "description": "A team of special agents investigates crimes connected to the Navy and Marine Corps.",
+      "progress": 10
+    },
+    {
+      "id": "tv3",
+      "title": "Kamen Rider",
+      "genre": "Action",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie5.mp4",
+      "year": "1971",
+      "seasons": "Multiple Seasons",
+      "rating": "8.0",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/lv3OlrXyTNg4Dz0JrtopOmMziNs.jpg",
+      "description": "A heroic masked rider fights evil organizations using advanced technology and martial arts.",
+      "progress": 10
+    },
+    {
+      "id": "tv4",
+      "title": "JUJUTSU KAISEN",
+      "genre": "Anime",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie3.mp4",
+      "year": "2020",
+      "seasons": "2 Seasons",
+      "rating": "8.6",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg",
+      "description": "A high school student becomes involved in a secret organization fighting powerful curses.",
+      "progress": 10
+    },
+    {
+      "id": "tv10",
+      "title": "Stargate SG-1",
+      "genre": "Sci-Fi",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie1.mp4",
+      "year": "1997",
+      "seasons": "10 Seasons",
+      "rating": "8.4",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/dQjmI7XxI47v8IM2MUysHG0LuU2.jpg",
+      "description": "A secret military team travels through a stargate to explore other planets and fight alien threats.",
+      "progress": 10
+    },
+    {
+      "id": "19",
+      "title": "JUJUTSU KAISEN: Execution",
+      "genre": "Anime",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie7.mp4",
+      "year": "2025",
+      "duration": "110 min",
+      "rating": "8.8",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/v0s3dx6am0RzfsuK3KdEy8ZoCDs.jpg",
+      "description": "Yuji Itadori faces the consequences of a dangerous curse while powerful sorcerers prepare for a deadly execution order.",
+      "progress": 10
+    },
+    {
+      "id": "17",
+      "title": "Wildcat",
+      "genre": "Drama",
+      "isSeries": "movie",
+      "videoUrl": "/trailers/movie4.mp4",
+      "year": "2025",
+      "duration": "108 min",
+      "rating": "7.6",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/h893ImjM6Fsv5DFhKJdlZFZIJno.jpg",
+      "description": "A troubled soldier finds healing and purpose while working with a wildlife rescue organization in the Amazon.",
+      "progress": 10
+    },
+    {
+      "id": "tv5",
+      "title": "Game of Thrones",
+      "genre": "Fantasy",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie6.mp4",
+      "year": "2011",
+      "seasons": "8 Seasons",
+      "rating": "9.2",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
+      "description": "Nine noble families fight for control over the lands of Westeros while an ancient enemy returns.",
+      "progress": 10
+    }
+  ],
+  "music": [
+    {
+      "id": "1",
+      "title": "Barefoot Blue Jean Night",
+      "artist": "Jake Owen",
+      "image": "https://lastfm.freetls.fastly.net/i/u/300x300/978150f141d968173232ae7d2ed7615f.jpg",
+      "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    },
+    {
+      "id": "2",
+      "title": "Blown Away",
+      "artist": "Carrie Underwood",
+      "image": "https://lastfm.freetls.fastly.net/i/u/300x300/010b2d7d5791836d72544fbe41f59440.jpg",
+      "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+    },
+    {
+      "id": "3",
+      "title": "Learn to Live",
+      "artist": "Darius Rucker",
+      "image": "https://lastfm.freetls.fastly.net/i/u/300x300/9f627953721c3be91b92b3c77e0599e6.jpg",
+      "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+    },
+    {
+      "id": "4",
+      "title": "Golden Hour",
+      "artist": "Kacey Musgraves",
+      "image": "https://lastfm.freetls.fastly.net/i/u/300x300/c595791ea078d76385ca7e994f921084.jpg",
+      "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+    },
+    {
+      "id": "5",
+      "title": "Dierks Bentley",
+      "artist": "Dierks Bentley",
+      "image": "https://lastfm.freetls.fastly.net/i/u/300x300/88b646daa5e6626399ccd002ba67e50d.jpg",
+      "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
+    },
+    {
+      "id": "6",
+      "title": "American V: A Hundred Highways",
+      "artist": "Johnny Cash",
+      "image": "https://lastfm.freetls.fastly.net/i/u/300x300/1b16d0a28e10447e83aac3c30e45c894.jpg",
+      "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"
+    },
+    {
+      "id": "7",
+      "title": "Speak Now (Deluxe Edition)",
+      "artist": "Taylor Swift",
+      "image": "https://lastfm.freetls.fastly.net/i/u/300x300/ae5d22987f89445da85a6ec7d2bbc668.jpg",
+      "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3"
+    },
+    {
+      "id": "8",
+      "title": "Blake Shelton",
+      "artist": "Blake Shelton",
+      "image": "https://lastfm.freetls.fastly.net/i/u/300x300/ead6c05631ff4d5f8c0294df9f389831.jpg",
+      "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
+    },
+    {
+      "id": "9",
+      "title": "The World from the Side of the Moon",
+      "artist": "Phillip Phillips",
+      "image": "https://lastfm.freetls.fastly.net/i/u/300x300/f5651fa87f82fefd8d2f255ab63aa042.jpg",
+      "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"
+    },
+    {
+      "id": "10",
+      "title": "American III: Solitary Man",
+      "artist": "Johnny Cash",
+      "image": "https://lastfm.freetls.fastly.net/i/u/300x300/f7a51677c38643199f56ab4ede09942a.jpg",
+      "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3"
+    }
+  ],
+  "books": [
+    {
+      "id": "1",
+      "title": "Stellaluna",
+      "author": "Janell Cannon",
+      "image": "https://covers.openlibrary.org/b/id/10500690-M.jpg",
+      "content": "A beloved children's book about a young fruit bat named Stellaluna who gets separated from her mother and learns to live among birds while discovering her true identity."
+    },
+    {
+      "id": "2",
+      "title": "Becoming Attached",
+      "author": "Robert Karen",
+      "image": "https://covers.openlibrary.org/b/id/8788253-M.jpg",
+      "content": "A psychological exploration of attachment theory and how early relationships between parents and children shape emotional development."
+    },
+    {
+      "id": "3",
+      "title": "Deep Six",
+      "author": "Clive Cussler",
+      "image": "https://covers.openlibrary.org/b/id/8600980-M.jpg",
+      "content": "An adventure thriller featuring Dirk Pitt investigating a mysterious disappearance of ships and uncovering an international conspiracy."
+    },
+    {
+      "id": "4",
+      "title": "Runaway Ralph",
+      "author": "Beverly Cleary",
+      "image": "https://covers.openlibrary.org/b/id/14925041-M.jpg",
+      "content": "A children's novel about a mouse named Ralph who runs away from home and experiences exciting adventures while learning responsibility."
+    },
+    {
+      "id": "5",
+      "title": "U888ninnfo",
+      "author": "Unknown",
+      "image": "https://covers.openlibrary.org/b/id/8231759-M.jpg",
+      "content": "A mysterious or lesser-known title with limited public information, often appearing in experimental or catalog listings."
+    },
+    {
+      "id": "6",
+      "title": "Scooby-Doo in Don't Play Dummy with Me!",
+      "author": "James Gelsey",
+      "image": "https://covers.openlibrary.org/b/id/8239178-M.jpg",
+      "content": "A fun mystery adventure where Scooby-Doo and the gang investigate strange happenings involving a mysterious ventriloquist dummy."
+    },
+    {
+      "id": "7",
+      "title": "The New Illustrated Treasury of Disney Songs",
+      "author": "Hal Leonard Corp.",
+      "image": "https://covers.openlibrary.org/b/id/545592-M.jpg",
+      "content": "A beautifully illustrated collection of classic Disney songs featuring musical notation, lyrics, and artwork from famous Disney movies."
+    },
+    {
+      "id": "8",
+      "title": "Urban Structuring: Studies of Alison & Peter Smithson",
+      "author": "Alison Smithson & Peter Smithson",
+      "image": "https://covers.openlibrary.org/b/id/10598645-M.jpg",
+      "content": "An architectural study examining urban planning ideas and projects by influential British architects Alison and Peter Smithson."
+    },
+    {
+      "id": "9",
+      "title": "The Search for a Black Nationality",
+      "author": "Sterling Stuckey",
+      "image": "https://covers.openlibrary.org/b/id/9450600-M.jpg",
+      "content": "A historical and cultural analysis exploring African American identity, nationalism, and the struggle for cultural unity."
+    },
+    {
+      "id": "10",
+      "title": "1633",
+      "author": "Eric Flint & David Weber",
+      "image": "https://covers.openlibrary.org/b/id/476803-M.jpg",
+      "content": "A science fiction and alternate history novel set during the Thirty Years' War, where a modern American town is transported back to 17th-century Europe."
+    }
+  ],
+  "podcasts": [
+    {
+      "id": "1",
+      "title": "The Daily",
+      "author": "The New York Times",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/ab/64/66/ab6466a9-9a7d-e20e-7a3d-bc5be37d29ce/mza_15084852813176276273.jpg/440x440bb.webp",
+      "content": "A daily news podcast that explains the biggest stories of the day with insight and analysis."
+    },
+    {
+      "id": "2",
+      "title": "The Joe Rogan Experience",
+      "author": "Joe Rogan",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/20/ca/57/20ca5718-1fa5-43d2-62aa-80a7b5e10a23/mza_5053467016139819545.jpg/440x440bb.webp",
+      "content": "A long-form conversation podcast featuring guests from comedy, science, politics, sports, and entertainment."
+    },
+    {
+      "id": "3",
+      "title": "Crime Junkie",
+      "author": "Ashley Flowers",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/8c/35/04/8c350430-2fbf-98d0-0a25-00b76550ffeb/mza_13445204151221888086.jpg/440x440bb.webp",
+      "content": "A popular true crime podcast that dives into mysterious and shocking criminal cases."
+    },
+    {
+      "id": "4",
+      "title": "Dateline NBC",
+      "author": "NBC News",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts115/v4/8c/00/7a/8c007a42-e550-0214-d4cb-b59cd7edf194/mza_5305664083935674472.jpeg/440x440bb.webp",
+      "content": "A podcast version of the Dateline TV show featuring investigative journalism and real crime stories."
+    },
+    {
+      "id": "5",
+      "title": "Trace of Suspicion",
+      "author": "True Crime Network",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/89/2f/4d/892f4dec-f450-b166-2c2c-198f03d921b7/mza_15789624275893950972.jpg/440x440bb.webp",
+      "content": "A podcast exploring suspicious events, mysteries, and criminal investigations."
+    },
+    {
+      "id": "6",
+      "title": "True Crime Weekly Series",
+      "author": "Crime Media",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/98/ec/48/98ec4826-9f99-2277-f86b-35c5b053bda3/mza_6836564502434766701.jpg/440x440bb.webp",
+      "content": "Weekly episodes covering famous and lesser-known true crime cases."
+    },
+    {
+      "id": "7",
+      "title": "True Crime Updated Weekly",
+      "author": "Crime Podcast Network",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/de/60/ac/de60ac6d-4c1d-148a-9e69-6d98be3ed092/mza_2116738123611658868.jpeg/440x440bb.webp",
+      "content": "A podcast delivering weekly updates and discussions about ongoing and past criminal cases."
+    },
+    {
+      "id": "8",
+      "title": "Comedy",
+      "author": "Various Creators",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/e0/b0/cc/e0b0cc59-a83a-63b0-ef0d-414c0b8e2fed/mza_3424648877445672256.jpeg/440x440bb.webp",
+      "content": "A podcast category featuring humorous conversations, stand-up stories, and comedic discussions."
+    },
+    {
+      "id": "9",
+      "title": "Society and Culture",
+      "author": "Various Hosts",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/ff/b2/ff/ffb2fffc-5e3e-4257-2221-e17897467238/mza_2893260140256202182.png/440x440bb.webp",
+      "content": "Podcasts discussing social issues, cultural trends, and human behavior around the world."
+    },
+    {
+      "id": "10",
+      "title": "TV & Film",
+      "author": "Entertainment Hosts",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/36/7a/2a/367a2a14-388d-ca4c-37cb-dcfbee9ca225/mza_8632177326846543100.jpeg/440x440bb.webp",
+      "content": "A podcast about television shows, movies, reviews, and behind-the-scenes stories from the entertainment industry."
+    }
+  ],
+  "tvshows": [
+    {
+      "id": "tv1",
+      "title": "ONE PIECE",
+      "genre": "Adventure",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie1.mp4",
+      "year": "2023",
+      "seasons": "1 Season",
+      "rating": "8.5",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/blWCPEqDGLBuLB9u89CxP9ORQP4.jpg",
+      "description": "A young pirate named Luffy and his crew set sail to find the legendary treasure known as One Piece."
+    },
+    {
+      "id": "tv2",
+      "title": "NCIS",
+      "genre": "Crime",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie3.mp4",
+      "year": "2003",
+      "seasons": "20+ Seasons",
+      "rating": "7.8",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/mBcu8d6x6zB1el3MPNl7cZQEQ31.jpg",
+      "description": "A team of special agents investigates crimes connected to the Navy and Marine Corps."
+    },
+    {
+      "id": "tv3",
+      "title": "Kamen Rider",
+      "genre": "Action",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie5.mp4",
+      "year": "1971",
+      "seasons": "Multiple Seasons",
+      "rating": "8.0",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/lv3OlrXyTNg4Dz0JrtopOmMziNs.jpg",
+      "description": "A heroic masked rider fights evil organizations using advanced technology and martial arts."
+    },
+    {
+      "id": "tv4",
+      "title": "JUJUTSU KAISEN",
+      "genre": "Anime",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie3.mp4",
+      "year": "2020",
+      "seasons": "2 Seasons",
+      "rating": "8.6",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg",
+      "description": "A high school student becomes involved in a secret organization fighting powerful curses."
+    },
+    {
+      "id": "tv5",
+      "title": "Game of Thrones",
+      "genre": "Fantasy",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie6.mp4",
+      "year": "2011",
+      "seasons": "8 Seasons",
+      "rating": "9.2",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
+      "description": "Nine noble families fight for control over the lands of Westeros while an ancient enemy returns."
+    },
+    {
+      "id": "tv6",
+      "title": "The Chosen",
+      "genre": "Drama",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie6.mp4",
+      "year": "2019",
+      "seasons": "4 Seasons",
+      "rating": "8.8",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/dqVUFuNrMFWt7uGNWlpo91VKYOI.jpg",
+      "description": "A historical drama series about the life and ministry of Jesus Christ."
+    },
+    {
+      "id": "tv7",
+      "title": "Smallville",
+      "genre": "Superhero",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie3.mp4",
+      "year": "2001",
+      "seasons": "10 Seasons",
+      "rating": "8.2",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/mHZSq8LA5Dt48JjaOZ5tcPXQRVN.jpg",
+      "description": "The story of young Clark Kent growing up before becoming Superman."
+    },
+    {
+      "id": "tv8",
+      "title": "Stranger Things",
+      "genre": "Sci-Fi",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie7.mp4",
+      "year": "2016",
+      "seasons": "4 Seasons",
+      "rating": "8.7",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/uOOtwVbSr4QDjAGIifLDwpb2Pdl.jpg",
+      "description": "When a young boy disappears, his friends uncover supernatural mysteries in their town."
+    },
+    {
+      "id": "tv9",
+      "title": "C.I.D.",
+      "genre": "Crime",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie5.mp4",
+      "year": "1998",
+      "seasons": "20+ Seasons",
+      "rating": "8.1",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/3UymnlLfLMKxG8OcFhSnAlnhQfZ.jpg",
+      "description": "An elite crime investigation team solves complex criminal cases across the country."
+    },
+    {
+      "id": "tv10",
+      "title": "Stargate SG-1",
+      "genre": "Sci-Fi",
+      "isSeries": "series",
+      "videoUrl": "/trailers/movie1.mp4",
+      "year": "1997",
+      "seasons": "10 Seasons",
+      "rating": "8.4",
+      "image": "https://media.themoviedb.org/t/p/w440_and_h660_face/dQjmI7XxI47v8IM2MUysHG0LuU2.jpg",
+      "description": "A secret military team travels through a stargate to explore other planets and fight alien threats."
+    }
+  ]
+}
