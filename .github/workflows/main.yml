@@ -1,13 +1,19 @@
-name: React CI
+name: Advanced Practice Workflow
 
 on:
   push:
+    branches:
+      - main
+      - dev
+
+  pull_request:
     branches:
       - main
 
   workflow_dispatch:
 
 jobs:
+
   build:
     runs-on: ubuntu-latest
 
@@ -15,7 +21,10 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Print Branch Name
+        run: echo $GITHUB_REF_NAME
+
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -23,5 +32,26 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build Project
+      - name: Build React App
         run: npm run build
+
+  branch-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Main Branch Message
+        if: github.ref_name == 'main'
+        run: echo "Production branch detected"
+
+      - name: Dev Branch Message
+        if: github.ref_name == 'dev'
+        run: echo "Development branch detected"
+
+  manual-job:
+    if: github.event_name == 'workflow_dispatch'
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Manual Trigger Message
+        run: echo "Workflow started manually"
