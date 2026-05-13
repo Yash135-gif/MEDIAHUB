@@ -1,4 +1,4 @@
-name: Advanced Practice Workflow
+name: Secrets Practice Workflow
 
 on:
   push:
@@ -6,52 +6,58 @@ on:
       - main
       - dev
 
-  pull_request:
-    branches:
-      - main
-
   workflow_dispatch:
+
+env:
+  APP_NAME: MyReactApp
+  NODE_ENV: production
 
 jobs:
 
-  build:
+  app-info:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
+
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Print App Information
+        run: |
+          echo "Application Name: $APP_NAME"
+          echo "Environment: $NODE_ENV"
+
       - name: Print Branch Name
-        run: echo $GITHUB_REF_NAME
+        run: echo "Current Branch: $GITHUB_REF_NAME"
 
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
+      - name: Print Secret Safely
+        run: echo "${{ secrets.APP_PASSWORD }}"
 
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Build React App
-        run: npm run build
-
-  branch-check:
+  fake-deploy:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Main Branch Message
-        if: github.ref_name == 'main'
-        run: echo "Production branch detected"
-
-      - name: Dev Branch Message
-        if: github.ref_name == 'dev'
-        run: echo "Development branch detected"
-
-  manual-job:
-    if: github.event_name == 'workflow_dispatch'
-
-    runs-on: ubuntu-latest
+    env:
+      SERVER_IP: 54.12.34.56
+      DOCKER_IMAGE: my-react-app
 
     steps:
-      - name: Manual Trigger Message
-        run: echo "Workflow started manually"
+
+      - name: Deployment Information
+        run: |
+          echo "Deploying image: $DOCKER_IMAGE"
+          echo "Target Server: $SERVER_IP"
+
+      - name: Simulate AWS Login
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+        run: |
+          echo "Connecting to AWS..."
+          echo "AWS Login Successful"
+
+      - name: Fake Docker Commands
+        run: |
+          echo "docker build -t my-react-app ."
+          echo "docker push my-react-app"
+          echo "Deployment Completed"
