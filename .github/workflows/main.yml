@@ -28,7 +28,8 @@ jobs:
           echo "Environment: $NODE_ENV"
 
       - name: Print Branch Name
-        run: echo "Current Branch: $GITHUB_REF_NAME"
+        run: |
+         echo "Current Branch: ${{ github.ref_name }}"
 
       - name: Print Secret Safely
         run: echo "${{ secrets.APP_PASSWORD }}"
