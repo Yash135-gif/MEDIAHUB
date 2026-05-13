@@ -53,5 +53,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Manual Trigger Message
+      - name: this is Manual Trigger Message
         run: echo "Workflow started manually"
