@@ -53,18 +53,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Start Job 1
+      - name: Create File
         run: |
-          echo "Job 1 Started"
-          sleep 10
-          echo "Job 1 Finished"
+          echo "Hello from Job 1" > test.txt
+          ls
 
   parallel-job-2:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Start Job 2
-        run: |
-          echo "Job 2 Started"
-          sleep 5
-          echo "Job 2 Finished"
+      - name: Check File
+        run: ls
