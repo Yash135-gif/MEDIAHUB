@@ -1,20 +1,11 @@
-name: Secrets Practice Workflow
+name: Runner Deep Practice
 
 on:
-  push:
-    branches:
-      - main
-      - dev
-
   workflow_dispatch:
-
-env:
-  APP_NAME: MyReactApp
-  NODE_ENV: production
 
 jobs:
 
-  app-info:
+  explore-runner:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,43 +13,58 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Print App Information
+      - name: Basic Runner Information
         run: |
-          echo "Application Name: $APP_NAME"
-          echo "Environment: $NODE_ENV"
+          echo "Current User:"
+          whoami
 
-      - name: Print Branch Name
+          echo "Current Directory:"
+          pwd
+
+          echo "Operating System:"
+          uname -a
+
+      - name: Check CPU and RAM
         run: |
-         echo "Current Branch: ${{ github.ref_name }}"
+          echo "CPU Cores:"
+          nproc
 
-      - name: Print Secret Safely
-        run: echo "${{ secrets.APP_PASSWORD }}"
+          echo "RAM Information:"
+          free -h
 
-  fake-deploy:
+      - name: Check Installed Tools
+        run: |
+          echo "Git Version:"
+          git --version
+
+          echo "Node Version:"
+          node --version
+
+          echo "NPM Version:"
+          npm --version
+
+          echo "Docker Version:"
+          docker --version
+
+      - name: Show Files
+        run: ls -la
+
+  parallel-job-1:
     runs-on: ubuntu-latest
 
-    env:
-      SERVER_IP: 54.12.34.56
-      DOCKER_IMAGE: my-react-app
+    steps:
+      - name: Start Job 1
+        run: |
+          echo "Job 1 Started"
+          sleep 10
+          echo "Job 1 Finished"
+
+  parallel-job-2:
+    runs-on: ubuntu-latest
 
     steps:
-
-      - name: Deployment Information
+      - name: Start Job 2
         run: |
-          echo "Deploying image: $DOCKER_IMAGE"
-          echo "Target Server: $SERVER_IP"
-
-      - name: Simulate AWS Login
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-
-        run: |
-          echo "Connecting to AWS..."
-          echo "AWS Login Successful"
-
-      - name: Fake Docker Commands
-        run: |
-          echo "docker build -t my-react-app ."
-          echo "docker push my-react-app"
-          echo "Deployment Completed"
+          echo "Job 2 Started"
+          sleep 5
+          echo "Job 2 Finished"
