@@ -23,6 +23,9 @@ jobs:
 
           echo "Operating System:"
           uname -a
+          
+      - name: Environment Variables
+        run: env
 
       - name: Check CPU and RAM
         run: |
