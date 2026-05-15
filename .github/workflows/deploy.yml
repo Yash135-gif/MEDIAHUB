@@ -47,6 +47,9 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
 
           script: |
+
+            aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 824090261771.dkr.ecr.ap-south-1.amazonaws.com
+            
             docker pull 824090261771.dkr.ecr.ap-south-1.amazonaws.com/react-app:latest
 
             docker stop react-container || true
