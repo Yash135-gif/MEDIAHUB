@@ -37,3 +37,23 @@ jobs:
       - name: Push Docker Image to ECR
         run: |
           docker push ${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }}:latest
+
+      - name: Deploy to EC2 via SSH
+        uses: appleboy/ssh-action@v1
+
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+
+          script: |
+            docker pull 824090261771.dkr.ecr.ap-south-1.amazonaws.com/react-app:latest
+
+            docker stop react-container || true
+
+            docker rm react-container || true
+
+            docker run -d \
+              --name react-container \
+              -p 3000:3000 \
+              824090261771.dkr.ecr.ap-south-1.amazonaws.com/react-app:latest
