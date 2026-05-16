@@ -1,62 +1,40 @@
-name: Build and Push to ECR
+name: Job Dependencies Practice
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
 
-  build-and-push:
+  test:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Run Tests
+        run: |
+          echo "Running tests..."
+          sleep 5
+          echo "Tests Passed"
 
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+  build:
+    needs: test
 
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_REGION }}
+    runs-on: ubuntu-latest
 
-      - name: Login to Amazon ECR
-        id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v2
-
+    steps:
       - name: Build Docker Image
         run: |
-          docker build -t react-app .
+          echo "Building Docker Image..."
+          sleep 5
+          echo "Build Completed"
 
-      - name: Tag Docker Image
+  deploy:
+    needs: build
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy Application
         run: |
-          docker tag react-app:latest ${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }}:latest
-
-      - name: Push Docker Image to ECR
-        run: |
-          docker push ${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }}:latest
-
-      - name: Deploy to EC2 via SSH
-        uses: appleboy/ssh-action@v1
-
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USERNAME }}
-          key: ${{ secrets.EC2_SSH_KEY }}
-
-          script: |
-
-            aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 824090261771.dkr.ecr.ap-south-1.amazonaws.com
-            
-            docker pull 824090261771.dkr.ecr.ap-south-1.amazonaws.com/react-app:latest
-
-            docker stop react-container || true
-
-            docker rm react-container || true
-
-            docker run -d \
-              --name react-container \
-              -p 3000:3000 \
-              824090261771.dkr.ecr.ap-south-1.amazonaws.com/react-app:latest
+          echo "Deploying Application..."
+          sleep 5
+          echo "Deployment Successful"
