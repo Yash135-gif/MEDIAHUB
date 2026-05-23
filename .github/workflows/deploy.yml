@@ -1,4 +1,4 @@
-name: Job Dependencies Practice
+name: Production Style Pipeline
 
 on:
   workflow_dispatch:
@@ -9,23 +9,78 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js with Cache
+        uses: actions/setup-node@v4
+
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install
+
       - name: Run Tests
         run: |
-          echo "Running tests..."
+          echo "Running Tests..."
           sleep 5
           echo "Tests Passed"
 
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js with Cache
+        uses: actions/setup-node@v4
+
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Lint
+        run: |
+          echo "Checking Code Quality..."
+          sleep 3
+          echo "Lint Passed"
+
   build:
-    needs: test
+    needs:
+      - test
+      - lint
 
     runs-on: ubuntu-latest
 
     steps:
-      - name: Build Docker Image
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js with Cache
+        uses: actions/setup-node@v4
+
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build React App
         run: |
-          echo "Building Docker Image..."
-          sleep 5
-          echo "Build Completed"
+          echo "Building React Application..."
+          npm run build
+
+  # deployment job
 
   deploy:
     needs: build
@@ -33,7 +88,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy Application
+
+      - name: Fake Deployment
         run: |
           echo "Deploying Application..."
           sleep 5
