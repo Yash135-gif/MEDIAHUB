@@ -10,6 +10,8 @@ COPY . .
 
 RUN npm run build
 
+# exposing 3000 port
+
 EXPOSE 3000
 
 CMD ["npm", "run", "dev", "--", "--host"]
