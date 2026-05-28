@@ -9,7 +9,6 @@ RUN npm install
 COPY . .
 
 RUN npm run build
-# exposing 3000 oort
 
 EXPOSE 3000
 
