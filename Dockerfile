@@ -10,6 +10,8 @@ COPY . .
 
 RUN npm run build
 
+# skdflsal
+
 EXPOSE 3000
 
 CMD ["npm", "run", "dev", "--", "--host"]
