@@ -10,7 +10,7 @@ COPY . .
 
 RUN npm run build
 
-# skdflsal
+ 
 
 EXPOSE 3000
 
