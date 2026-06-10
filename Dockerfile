@@ -8,8 +8,6 @@ RUN npm install
 
 COPY . .
 
-#dlsjfa
-
 RUN npm run build
 
 EXPOSE 3000
